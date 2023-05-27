@@ -1,0 +1,116 @@
+/* Body styles */
+body {
+  background: url('https://s3.amazonaws.com/www.explorersweb.com/wp-content/uploads/2023/03/16210114/brachiosaurs-1536x1014.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Contact form styles */
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}.social i {
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .social i:hover {
+    color: #ffc107;
+  }
+  .navbar { border-radius: 15px;
+
+  }
+  .navbar:hover {
+    min-width: 250px;
+    border-radius: 15px;
+
+  }
+  .navbar a:hover {
+    background-color: #6ec945;
+    color: #fff;
+    border-radius: 13px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .navbar-brand {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 12px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+  }
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+/* Star rating styles */
+fieldset, label { margin: 0; padding: 0; }
+body { margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/** Style Star Rating Widget **/ 
+.rating {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.rating input {
+  position: absolute;
+  left: -9999px;
+}
+
+.rating label {
+  display: inline-block;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.rating label.full:before {
+  content: '\f005';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.rating label.half:before {
+  content: '\f089';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.rating label:hover:before,
+.rating label:hover ~ label:before,
+.rating input:checked ~ label:before {
+  color: #ffc107;
+}
+
+.rating input:checked ~ label:before {
+  color: #ffc107;
+}
+
+.rating.rated label:before {
+  color: #ffc107;
+}
