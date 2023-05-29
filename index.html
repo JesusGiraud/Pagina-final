@@ -6,13 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-DMtFsSdV9WWJj+uA+5D8Y3mOZP9oKZQx9Jz5JtfQKdK3eXONVWUd6mEz2Z/8s8y+XvVjz3oh1m2Gq/eqrR8t1g==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  
+  <script>
+    function playVideo() {
+      var myVideo = document.getElementById("myVideo");
+      myVideo.play();
+    }
+  </script>
   <style>
     
     .jumbotron {
   position: relative;
   height: 100vh;
   overflow: hidden;
+} .texto { -webkit-text-fill-color: #fff;
+  
 }
 .jumbotron video {
   position: absolute;
@@ -89,20 +96,39 @@
     </div>
   </nav>
   <!-- Jumbotron -->
-  <div class="jumbotron">
-    <video autoplay muted loop>
+  <div class="jumbotron" onclick="playVideo()">
+    <video id="myVideo" autoplay muted loop>
       <source src="Espinosaurio.mp4" type="video/mp4">
     </video>
     <div class="container text-center">
-      <h1>Dinosaurios</h1>
+      <div class="texto">
+      <h1>Dinosaurios</h1></div>
     </div>
   </div>
   
   <div class="container my-5">
     <h3 class="text-center">Información</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nulla ac est fermentum eleifend. Pellentesque et rutrum nisl, quis tristique velit. Nunc ut porta nulla, ac consectetur enim.Fusce suscipit quam vel dolor auctor bibendum. Sed tempor velit vel tortor pharetra, eu ultricies purus vehicula. Praesent vestibulum blandit risus, a porta enim sollicitudin sed.</p>
+    <p>Los dinosaurios fueron un grupo de reptiles que habitaron la Tierra en la era mesozoica , desde el período triásico superior hasta fines del cretácico (245 a 65 millones de años atrás). Su desaparición marca el límite entre la era mesozoica y la cenozoica, y el comienzo de la denominada edad de los mamíferos.</p>
   </div>
-  
+
+
+
+    <div class="container">
+      <h1>Reproductor de audio</h1>
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.etsystatic.com/31214946/r/il/b351d1/3824173223/il_340x270.3824173223_bpq7.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Escuchar</h5>
+          <audio controls>
+            <source src="Grabacion.m4a" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </div>
+    </div>
+   
+
+
   <div class="container my-5">
     <h3 class="text-center">Quizás te interese</h3>
     <div class="row">
