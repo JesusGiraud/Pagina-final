@@ -6,12 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script> var iconos = document.getElementsByClassName("timeline-icons");
+
+    for (var i = 0; i < iconos.length; i++) {
+      iconos[i].addEventListener("mouseover", function() {
+        this.classList.add("agrandar");
+      });
+    
+      iconos[i].addEventListener("mouseout", function() {
+        this.classList.remove("agrandar");
+      });
+    }
+    </script>
   <style>
     body {
   background-image: url('https://cdn.discordapp.com/attachments/980566743011455037/1111794037893107822/image.png');
   background-size: cover;
-  background-position: center center;
+  background-position: center center; }
+  .timeline-icons {
+  transform: scale(1);
+  transition: transform 1s ease-in-out;
 }
+
+.timeline-icons:hover {
+  animation-name: agrandar;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+@keyframes agrandar {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(4);
+  }
+}
+
+
     .timeline-item.timeline-item-2005 .timeline-content {
   background-image: linear-gradient(to right, #45e9ff7c, #1f4b7e62), url('https://i.pinimg.com/736x/bb/0b/4d/bb0b4dfbd22b53040c5fd4070a9abdac--prehistoric-dinosaurs.jpg');
   background-position: right center;
